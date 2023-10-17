@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Checkbox</h2>
+
+<input type="checkbox" id="myCheck1"  value="1">
+<label for="myCheck1"> Checkbox 1</label><br>
+<input type="checkbox" id="myCheck2"  value="2">
+<label for="myCheck2"> Checkbox 2</label><br>
+<input type="checkbox" id="myCheck3"  value="3">
+<label for="myCheck3"> Checkbox 3</label><br><br>
+
+<button onclick="myFunction()">Hapus semua tanda centang</button>
+
+<script>
+function myFunction() {
+  var checkboxes = document.querySelectorAll('input[type=checkbox]');
+  for (var i = 0; i < checkboxes.length; i++) {
+    if (checkboxes[i].checked) {
+      checkboxes[i].checked = false;
+    }
+  }
+}
+</script>
+
+</body>
+</html> 
