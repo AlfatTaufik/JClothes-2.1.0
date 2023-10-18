@@ -1052,6 +1052,17 @@ img .nav__logo {
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 445px) {
+
+  .nav__menu {
+    position: fixed;
+    background-color: var(--body-color);
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 6rem 2rem 3.5rem;
+    transition: 0.3s;
+  }
   
   .container__design {
     width: 220px;
