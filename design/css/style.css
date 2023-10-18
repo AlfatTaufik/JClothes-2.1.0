@@ -1052,22 +1052,37 @@ img .nav__logo {
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 445px) {
-
-  .nav {
-    height: var(--header-height);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .nav.container {
-    max-width: 336px;
-  }
   
+  .container {
+    max-width: 354px;
+    margin-left: 1rem;
+    margin-right: 5px;
+}
+.header {
+  width: 100%;
+  overflow: hidden;
+} 
+.Main {
+    width: 355px;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+}
+.add__design__panel {
+    width: 436px;
+    height: 603px;
+    padding-right: 8px;
+    left: 682px;
+    top: 8px;
+    position: absolute;
+    overflow: hidden;
+    visibility: hidden;
+}
+
   .container__design {
-    width: 220px;
-    height: 317px;
-    left: 75.5px;
+    width: 300px;
+    height: 488px;
+    left: 120.5px;
     top: 0px;
     position: absolute;
     background: var(--body-color);
@@ -1187,12 +1202,20 @@ img .nav__logo {
     cursor: pointer;
   }
 
-
+  .container__design {
+    width: 220px;
+    height: 317px;
+    left: 75.5px;
+    top: 0px;
+    position: absolute;
+    background: var(--body-color);
+    border: 4px var(--nav-hover-color) solid;
+  }
 
   .container__panel {
-    height: 600px;
+    height: 500px;
     left: 0px;
-    top: 1rem;
+    top: 0px;
     position: absolute;
     justify-content: flex-start;
     align-items: flex-start;
@@ -1213,7 +1236,7 @@ img .nav__logo {
   .margin__heading__dan__button {
     width: 442px;
     height: 200px;
-    margin-top: 280px;
+    margin-top: 380px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -1245,7 +1268,7 @@ img .nav__logo {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 0px;
-    margin-top: 4rem;
+    top: 3rem;
     display: flex;
     cursor: pointer;
   }
@@ -1265,15 +1288,16 @@ img .nav__logo {
 
   .footer {
   display: flex;
-  width: 30rem;
+  width: 25rem;
   height: 4.5rem;
-  margin-top: 12rem;
+  margin-top: 7rem;
   padding: 0.7rem 0.1rem 0.7rem 1rem;
   align-items: center;
   flex-shrink: 0;
   background-color: var(--body-color);
   border-top: 1px solid var(--nav-hover-color);
   align-items: center;
+  overflow: hidden;
 }
 .text__footer {
   display: flex;
@@ -1291,18 +1315,12 @@ img .nav__logo {
     gap: 1rem;
     margin-right: 0;
 }
-.image__of__currentProduct__container {
-  display: flex;
-  gap: 5px;
-}
-
 .image__of__currentProduct {
-    display: grid;
+    display: flex;
     height: 3.125rem;
     padding: 0.0625rem;
     align-items: flex-start;
     width: 2.4rem;
-    /* grid-template-columns: repeat(1, 200px); */
     height: 2.5rem;
     min-width: 2.5rem;
     border: 3px solid var(--nav-hover-color);
@@ -1310,7 +1328,7 @@ img .nav__logo {
 
   .footer__save__container {
     display: flex;
-    width: 9rem;
+    width: 7.5rem;
     height: 2.5rem;
     justify-content: flex-end;
     align-items: center;
@@ -2370,10 +2388,6 @@ img .nav__logo {
 }
 }
 @media screen and (min-width: 781px) and (max-width: 1025px) {
-  body {
-    overflow-x: hidden;
-  }
-
   .container__design {
     width: 300px;
     height: 488px;
@@ -2447,7 +2461,7 @@ img .nav__logo {
   display: flex;
   width: 60rem;
   height: 4.5rem;
-  margin-top: 7rem;
+  margin-top: 4rem;
   padding: 0.7rem 0.1rem 0.7rem 1rem;
   align-items: center;
   flex-shrink: 0;
