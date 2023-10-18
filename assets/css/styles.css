@@ -1128,11 +1128,14 @@ svg {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 460px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
+  /* .header {
+    width: 370px;
+  } */
 
   .home__img-bg {
     width: 220px;
