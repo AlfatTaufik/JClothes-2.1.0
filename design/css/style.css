@@ -2359,6 +2359,10 @@ img .nav__logo {
 }
 }
 @media screen and (min-width: 781px) and (max-width: 1025px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .container__design {
     width: 300px;
     height: 488px;
@@ -2432,7 +2436,7 @@ img .nav__logo {
   display: flex;
   width: 60rem;
   height: 4.5rem;
-  margin-top: 4rem;
+  margin-top: 7rem;
   padding: 0.7rem 0.1rem 0.7rem 1rem;
   align-items: center;
   flex-shrink: 0;
