@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico" type="image/x-icon">
+        <!--BOOTSTRAP  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+        <!--=============== BO  1XICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== FONT AWESOME ===============-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!--=============== CSS ===============-->
+        <!-- <link rel="stylesheet" href="css/search.scss"> -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>JCLothes || Login</title>
+    </head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container primary-navigation">
+            <a href="#" class="nav__logo "><img src="../assets/img/logoBlackMode.png" class="nav__logo">JCLothes</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link ">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../design/" class="nav__link ">Design Own &dtrif;</a>
+                        <ul class="">
+                            <li><a href="#">T-Shirt</a></li>
+                            <li><a href="#">Long Sleeves</a></li>
+                            <li><a href="#">Hoodie</a></li>
+                            <li><a href="#">Sweater</a></li>
+                            <li><a href="#">Crewneck</a></li>
+                            <li><a href="#">Jacket</a></li>
+                            <li><a href="#">Varsity</a></li>
+                        </ul>
+                    <li class="nav__item">
+                        <a href="index.html     " class="nav__link active-link">Our Product</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../contact/index.html" class="nav__link">Login</a>
+                    </li>
+                </ul>
+
+                <!-- close tab navbar responsive -->
+
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+            <!-- navButton dark mode dan chart -->
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class='bx bx-shopping-bag'></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--==================== CART ====================-->
+    <div class="cart" id="cart">
+        <i class='bx bx-x cart__close' id="cart-close"></i>
+
+        <h2 class="cart__title-center">Keranjang saya</h2>
+
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="../assets/img/product/tshirtDesign.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">T-Shirt</h3>
+                    <span class="cart__price">Rp.55.000,00</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus'></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus'></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash'></i>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- cart -->
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="../assets/img/product/Longsleeves.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Varsity</h3>
+                    <span class="cart__price">Rp250.000,00</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus'></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus'></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash'></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-item">3 items</span>
+            <span class="cart__prices-total">Rp.375.000,00</span>
+        </div>
+    </div>
+
+   <!-- ------_____login_____------ -->
+
+
+    <!----------------------- Main Container -------------------------->
+
+     <div class="container d-flex justify-content-center align-items-center min-vh-100">
+
+    <!----------------------- Login Container -------------------------->
+
+       <div class="box-hero row  rounded-5 p-3 box-area">
+
+    <!--------------------------- Left Box ----------------------------->
+
+       <div class="hero-img col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" >
+           <div class="featured-image mb-3">
+            <img src="../assets/img/product/satoru.png" class="img-fluid" style="width: 250px;">
+           </div>
+           <p class="text-white fs-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">Sign In Now.</p>
+           <small class="text-white text-wrap text-center" style="width: 17rem;font-family: 'Courier New', Courier, monospace;">Dapatkan access ke seluruh fitur JClothes.</small>
+       </div> 
+
+    <!-------------------- ------ Right Box ---------------------------->
+        
+       <div class="col-md-6 right-box">
+          <div class="row align-items-center">
+                <div class="header-text mb-4">
+                     <h2>Halo Users!</h2>
+                     <p>Masukan beberapa hal berikut untuk kembali login di JClothes</p>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Email address">
+                </div>
+                <div class="input-group mb-1">
+                    <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password">
+                </div>
+                <div class="input-group mb-5 d-flex justify-content-between">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="formCheck">
+                        <label for="formCheck" class="form-check-label text-secondary"><small>Remember Me</small></label>
+                    </div>
+                    <div class="forgot">
+                        <small><a class="signUp" href="#">Forgot Password?</a></small>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <button class="btn btn-sign btn-lg  w-100 fs-6">Login</button>
+                </div>
+                <div class="input-group mb-3">
+                    <button class="btn btn-lg btn-light w-100 fs-6"><img src="https://colors.dopely.top/inside-colors/wp-content/uploads/2021/06/dopely_google-symbol.png" style="width:20px" class="me-2"><small>Sign In with Google</small></button>
+                </div>
+                <div class="row">
+                    <small >Don't have account? <a class="signUp" href="signUp.html">Sign Up</a></small>
+                </div>
+          </div>
+       </div> 
+
+       
+
+        <!--=============== SWIPER JS ===============-->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../assets/js/main.js"></script>
+</body>
+</head>
