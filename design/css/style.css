@@ -219,6 +219,7 @@ body.dark-theme {
 }
 
 .nav {
+  width: 100%;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
