@@ -120,7 +120,7 @@ button {
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --first-color: hsl(31, 76%, 74%);
-  --button-color: hsl(0, 0%, 82%);
+  --button-color: hsl(31, 76%, 74%);
   --button-color-alt: hsl(0, 0%, 28%);
   --title-color: hsl(0, 0%, 95%);
   --text-color: hsl(0, 0%, 99%);
@@ -446,7 +446,7 @@ svg {
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
-  background-color: var(--container-color);
+  background-color: var(--button-color);
   color: var(--text-color);
   padding: 1.25rem 2rem;
   font-weight: var(--font-medium);
