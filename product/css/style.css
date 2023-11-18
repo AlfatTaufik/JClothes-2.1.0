@@ -126,7 +126,7 @@ button {
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --first-color: hsl(31, 76%, 74%);
-  --button-color: hsl(0, 0%, 24%);
+  --button-color: hsl(31, 76%, 74%);
   --button-color-alt: hsl(0, 0%, 28%);
   --title-color: hsl(0, 0%, 95%);
   --text-color: hsl(0, 0%, 99%);
@@ -549,9 +549,9 @@ svg {
 }
 
 .products__button {
-  background-color: var(--button-color);
+  background-color: var(--first-color);
   padding: 0.4rem;
-  color: var(--container-color);
+  color: var(--button-color-alt);
   font-size: 1rem;
   position: absolute;
   right: 0;
@@ -560,7 +560,7 @@ svg {
 }
 
 .products__button:hover {
-  background-color: var(--button-color-alt);
+  background-color: var(--border-colorr);
 }
 
 .products__card:hover {
@@ -621,7 +621,9 @@ line-height: 1.5rem; /* 143.82% */
   color: var(--first-color);
 }
 input[type="text"] {
-  width: 8rem;
+  width: 5rem;
+  color: var(--first-color);
+  border: none;
 }
 .page__title {
   max-width: 8rem;
